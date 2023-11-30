@@ -54,7 +54,7 @@ function Mint({}: MintProps) {
           <div className="flex flex-col gap-8">
             <MintImage caption="Image Name" />
             <ConnectButton />
-            <ConnectKitButton.Custom>
+            {/* <ConnectKitButton.Custom>
                {({ isConnected, isConnecting, show, hide, address, ensName, chain }) => { 
                  return ( 
                    <Button 
@@ -66,7 +66,7 @@ function Mint({}: MintProps) {
                    </Button> 
                  ) 
                }} 
-            </ConnectKitButton.Custom>
+            </ConnectKitButton.Custom> */}
           </div>
         </div>
       </Background>
