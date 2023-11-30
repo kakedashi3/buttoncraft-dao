@@ -54,19 +54,19 @@ function Mint({}: MintProps) {
           <div className="flex flex-col gap-8">
             <MintImage caption="Image Name" />
             <ConnectButton />
-            {/* <ConnectKitButton.Custom> */}
-            {/*   {({ isConnected, isConnecting, show, hide, address, ensName, chain }) => { */}
-            {/*     return ( */}
-            {/*       <Button */}
-            {/*         // disabled={!hasRequiredFields} */}
-            {/*         variant="default" */}
-            {/*         onClick={show} */}
-            {/*       > */}
-            {/*         Connect to Mint */}
-            {/*       </Button> */}
-            {/*     ) */}
-            {/*   }} */}
-            {/* </ConnectKitButton.Custom> */}
+            <ConnectKitButton.Custom>
+               {({ isConnected, isConnecting, show, hide, address, ensName, chain }) => { 
+                 return ( 
+                   <Button 
+                     // disabled={!hasRequiredFields} 
+                     variant="default" 
+                     onClick={show} 
+                   > 
+                     Connect to Mint 
+                   </Button> 
+                 ) 
+               }} 
+            </ConnectKitButton.Custom>
           </div>
         </div>
       </Background>
